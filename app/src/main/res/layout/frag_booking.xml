@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/theme_color">
+
+            <com.example.busbooking.helper.CustomTextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Bookings"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                style="@style/white_15"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_order_status"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:elevation="0dp"
+                app:tabGravity="fill"
+                app:tabIndicator="@drawable/tab_indicator_shape_theme"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="@dimen/_3sdp"
+                app:tabMode="fixed"
+                app:tabTextAppearance="@style/tab_text"
+                android:background="@color/theme_color"
+                app:tabIndicatorColor="@color/white"
+                app:tabRippleColor="@color/theme_color"
+                app:tabTextColor="@color/white" />
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

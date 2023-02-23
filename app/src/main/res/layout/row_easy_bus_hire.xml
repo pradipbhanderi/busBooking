@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lin_easy_bus_hire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        android:background="@drawable/easy_bus_hire">
+
+        <com.example.busbooking.helper.CustomTextViewSemiBold
+            android:id="@+id/txt_easy_bus_hire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/black_12"
+            android:gravity="center"
+            android:text="Easy Payment"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/lin_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/img_back_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white" />
+
+        </LinearLayout>
+
+        <com.example.busbooking.helper.CustomTextviewBold
+            style="@style/white_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Profile" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_add_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_2sdp"
+        android:visibility="visible"
+        android:layout_below="@+id/lin_bar"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                style="@style/black_13"
+                android:text="PERSONAL DETAILS"/>
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                android:id="@+id/txt_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/black_13"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="right"
+                android:textColor="@color/blue2"
+                android:text="EDIT"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_account"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <com.example.busbooking.helper.CustomTextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/black_11"
+                    android:alpha="0.7"
+                    android:text="Name"/>
+
+                <com.example.busbooking.helper.CustomTextViewSemiBold
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/black_11"
+                    android:alpha="0.7"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="Name"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_60sdp">
+
+<!--            <com.example.busbooking.helper.CustomTextViewMedium-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="DOM"-->
+<!--                style="@style/black_11"-->
+<!--                android:alpha="0.7"/>-->
+
+<!--            <com.example.busbooking.helper.CustomTextViewSemiBold-->
+<!--                android:id="@+id/txt_age"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                style="@style/black_11"-->
+<!--                android:alpha="0.7"-->
+<!--                android:layout_marginTop="@dimen/_3sdp"-->
+<!--                android:text="30"/>-->
+
+<!--            <com.example.busbooking.helper.CustomTextViewMedium-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Gender"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                style="@style/black_11"-->
+<!--                android:alpha="0.7"/>-->
+
+<!--            <com.example.busbooking.helper.CustomTextViewSemiBold-->
+<!--                android:id="@+id/txt_gender"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                style="@style/black_11"-->
+<!--                android:alpha="0.7"-->
+<!--                android:layout_marginTop="@dimen/_3sdp"-->
+<!--                android:text="Male"/>-->
+
+<!--            <com.example.busbooking.helper.CustomTextViewMedium-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Mobile Number"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                style="@style/black_11"-->
+<!--                android:alpha="0.7"/>-->
+
+<!--            <com.example.busbooking.helper.CustomTextViewSemiBold-->
+<!--                android:id="@+id/txt_mobile_number"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                style="@style/black_11"-->
+<!--                android:alpha="0.7"-->
+<!--                android:layout_marginTop="@dimen/_3sdp"-->
+<!--                android:text="95684 27356"/>-->
+
+            <com.example.busbooking.helper.CustomTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/black_11"
+                android:alpha="0.7"/>
+
+            <com.example.busbooking.helper.CustomTextViewSemiBold
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/black_11"
+                android:alpha="0.7"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="Email"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_addEdit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_2sdp"
+        android:visibility="gone"
+        android:layout_below="@+id/lin_bar"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                style="@style/black_13"
+                android:text="PERSONAL DETAILS"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_account"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="filled"
+                    app:boxStrokeColor="@color/black"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        style="@style/black_12"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_60sdp">
+
+<!--           <com.example.busbooking.helper.CustomTextViewSemiBold-->
+<!--               android:layout_width="match_parent"-->
+<!--               android:layout_height="wrap_content"-->
+<!--               style="@style/black_11"-->
+<!--               android:alpha="0.7"-->
+<!--               android:text="DOB(dd/mm/yyyy)"/>-->
+
+<!--            <com.example.busbooking.helper.CustomTextViewSemiBold-->
+<!--                android:id="@+id/txt_selectDate"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                style="@style/black_11"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:alpha="0.7"-->
+<!--                android:text="SelectDate"/>-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="@color/gray_light_dark" />-->
+
+<!--            <com.example.busbooking.helper.CustomTextViewMedium-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Gender"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                style="@style/black_11"-->
+<!--                android:alpha="0.7"/>-->
+
+<!--            <RadioGroup-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/radio_edit_m"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="M"-->
+<!--                    style="@style/black_11"-->
+<!--                    android:alpha="0.7"/>-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/radio_edit_f"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="F"-->
+<!--                    android:layout_marginStart="@dimen/_5sdp"-->
+<!--                    style="@style/black_11"-->
+<!--                    android:alpha="0.7"/>-->
+
+<!--            </RadioGroup>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:boxBackgroundMode="filled"-->
+<!--                app:boxStrokeColor="@color/black"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:hint="Mobile Number">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/edt_number"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:imeOptions="actionNext"-->
+<!--                    style="@style/black_11"-->
+<!--                    android:maxLength="10"-->
+<!--                    android:inputType="number"-->
+<!--                    android:singleLine="true" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="filled"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    style="@style/black_12"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                android:id="@+id/txt_Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/black_13"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="right"
+                android:textColor="@color/blue2"
+                android:text="DONE"/>
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                android:id="@+id/txt_Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/black_13"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="right"
+                android:textColor="@color/blue2"
+                android:text="CANCEL"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

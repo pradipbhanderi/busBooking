@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/lin_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rpool_shape"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp">
+
+            <LinearLayout
+                android:id="@+id/lin_upcoming"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_8sdp"
+                android:layout_weight="1">
+
+                <com.example.busbooking.helper.CustomTextviewBold
+                    android:id="@+id/txt_upcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/black_12"
+                    android:text="Upcoming"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#EEEEEE"/>
+
+            <LinearLayout
+                android:id="@+id/lin_recurring"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_8sdp"
+                android:layout_weight="1">
+
+                <com.example.busbooking.helper.CustomTextviewBold
+                    android:id="@+id/txt_recurring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/black_12"
+                    android:text="Recurring"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#EEEEEE"/>
+
+            <LinearLayout
+                android:id="@+id/lin_past"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_8sdp"
+                android:layout_weight="1">
+
+                <com.example.busbooking.helper.CustomTextviewBold
+                    android:id="@+id/txt_past"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/black_12"
+                    android:text="Past"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.example.busbooking.helper.CustomTextviewBold
+        style="@style/black_18"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin_main"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="visible"
+        android:text="Oops!! Something \nwent wrong" />
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/lin_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white" />
+
+        </LinearLayout>
+
+        <com.example.busbooking.helper.CustomTextviewBold
+            style="@style/white_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login / Sign Up" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        
+        <com.example.busbooking.helper.CustomTextviewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Join over travellers"
+            android:gravity="center"
+            style="@style/black_14"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/facebook_shape">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_facebook"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_sign_in_button"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="@drawable/card_line">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/ic_google"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <com.example.busbooking.helper.CustomTextviewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don's worry we never post anything on\n your account"
+            style="@style/black_11"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:alpha="0.7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/black"/>
+
+            <com.example.busbooking.helper.CustomTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                style="@style/black_11"/>
+
+            <View
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+        <com.example.busbooking.helper.CustomTextview
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            style="@style/black_11"/>
+
+        <LinearLayout
+            android:id="@+id/lin_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/sign_but">
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/black_14"
+                android:textColor="@color/theme_color"
+                android:gravity="center_horizontal"
+                android:text="Sign UP"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</RelativeLayout>

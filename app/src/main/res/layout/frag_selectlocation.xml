@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/lin_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/img_back_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white" />
+
+        </LinearLayout>
+
+        <com.example.busbooking.helper.CustomTextviewBold
+            style="@style/white_16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Rajkot to surat" />
+
+        <com.example.busbooking.helper.CustomTextview
+            android:id="@+id/txt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"
+            style="@style/white_11"
+            android:visibility="gone"
+            android:padding="@dimen/_10sdp"
+            android:text="Next"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_select_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_bar"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_select_location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:elevation="0dp"
+            app:tabGravity="fill"
+            app:tabIndicator="@drawable/tab_indicator_shape_theme"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="@dimen/_3sdp"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/tab_text"
+            android:background="#F5F7F9"
+            app:tabSelectedTextColor="@color/theme_color"
+            app:tabIndicatorColor="@color/theme_color"
+            app:tabRippleColor="@color/theme_color"
+            app:tabTextColor="@color/black" />
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_select_location"
+        android:layout_below="@+id/lin_select_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

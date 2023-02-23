@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:background="@drawable/complet_msg_shape">
+
+            <com.example.busbooking.helper.CustomTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Bookings"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_5sdp"
+                style="@style/gray_14"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

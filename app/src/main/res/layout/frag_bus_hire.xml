@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/lin_bus_hire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_bus_hire"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:elevation="0dp"
+            app:tabGravity="fill"
+            app:tabIndicator="@drawable/tab_indicator_shape_theme"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="@dimen/_3sdp"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/tab_text"
+            android:background="#F5F7F9"
+            app:tabSelectedTextColor="@color/theme_color"
+            app:tabIndicatorColor="@color/theme_color"
+            app:tabRippleColor="@color/theme_color"
+            app:tabTextColor="@color/black" />
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_bus_hire"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin_bus_hire"/>
+
+
+</RelativeLayout>

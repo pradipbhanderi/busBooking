@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/lin_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/img_back_journey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white" />
+
+        </LinearLayout>
+
+        <com.example.busbooking.helper.CustomTextviewBold
+            style="@style/white_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Journey data" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_add_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_2sdp"
+        android:visibility="visible"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_below="@+id/lin_bar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <com.example.busbooking.helper.CustomTextViewSemiBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    style="@style/black_13"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textColor="@color/theme_color"/>
+
+                <com.example.busbooking.helper.CustomTextViewSemiBold
+                    android:id="@+id/txt_today_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="29 Jan,22"
+                    style="@style/black_14"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@color/gray_light_dark"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.example.busbooking.helper.CustomTextViewSemiBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tomorrow"
+                    style="@style/black_13"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textColor="@color/theme_color"/>
+
+                <com.example.busbooking.helper.CustomTextViewSemiBold
+                    android:id="@+id/txt_tomorrow_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="29 Jan,22"
+                    style="@style/black_14"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

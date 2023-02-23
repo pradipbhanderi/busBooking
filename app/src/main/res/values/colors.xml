@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#f2512a</color>
+    <color name="purple_500">#f2512a</color>
+    <color name="purple_700">#f2512a</color>
+    <color name="teal_200">#f2512a</color>
+    <color name="teal_700">#f2512a</color>
+    <color name="black">#262626</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blue">#0000ff</color>
+    <color name="blue2">#1446A0</color>
+
+    <!--    my colors-->
+    <color name="colorPrimary">#f2512a</color>
+    <color name="colorPrimaryDark">#EE4957</color>
+    <color name="colorAccent">#43acc1</color>
+
+    <color name="success">#43acc1</color>
+    <color name="error">#FF363B</color>
+
+    <color name="bg_white">#F8F8F8</color>
+
+    <color name="click_color">#808080</color>
+    <color name="black_alpha">#A90A0A0B</color>
+    <color name="black_alpha_1">#800A0A0B</color>
+    <color name="black_alpha_2">#080A0A0B</color>
+    <color name="darker_gray">#787878</color>
+    <color name="red">#FF363B</color>
+    <color name="green">#088D6D</color>
+    <color name="green_alpha">#120BF6BE</color>
+    <color name="lime_green">#22CCA2</color>
+    <color name="selected_gry">#F5F5F7</color>
+    <color name="gray_terms">#7A7A7A</color>
+    <color name="view_color">#F1F1F1</color>
+    <color name="gray">#F5F5F7</color>
+    <color name="orange">#FF6937</color>
+    <color name="gray_light_dark">#C5C5C5</color>
+    <color name="gray_1">#C4C4C4</color>
+    <color name="gray_3">#D8DEDE</color>
+    <color name="gray_2">#F1F1F1</color>
+    <color name="pending">#1175AE</color>
+    <color name="yellow">#FCC005</color>
+    <color name="yellow2">#E1A739</color>
+    <color name="yellow3">#FFBF5C</color>
+    <color name="pink">#E56C7D</color>
+    <color name="buly">#385490</color>
+    <color name="drak_buly">#E2E8F5</color>
+    <color name="white_bg_dark">#97A7C3</color>
+    <color name="gray_alpha">#80CFCFCF</color>
+    <color name="green2">#38B87C</color>
+    <color name="orange2">#FB675D</color>
+
+    <color name="theme_palette">#FFEBEB</color>
+
+    <color name="palette1">#00C39E</color>
+    <color name="palette2">#FF5E96</color>
+    <color name="palette3">#FF952A</color>
+    <color name="palette4">#D577FF</color>
+    <color name="palette5">#5F86FF</color>
+    <color name="palette6">#FFB515</color>
+    <color name="palette7">#1de6ff</color>
+    <color name="palette8">#d81b60</color>
+    <color name="palette9">#5DADE2</color>
+    <color name="palette10">#F8C471</color>
+    <color name="palette11">#E74C3C</color>
+    <color name="palette12">#0277BD</color>
+    <color name="palette13">#566E7A</color>
+    <color name="theme_color">#D84E55</color>
+    <color name="gray2">#D9D9DA</color>
+</resources>

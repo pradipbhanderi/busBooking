@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BusBook</string>
+    <string name="nointernet">Internet Connection not available</string>
+    <string name="vpn">Please disconnect VPN and try again.</string>
+    <string name="Bus"> Bus </string>
+    <string name="rpool"> rpool </string>
+    <string name="bus_hire">Bus Hire</string>
+    <string name="completed">COMPLETED</string>
+    <string name="cancelled">CANCELLED</string>
+    <string name="mgs_completed">Looks empty, on completed trips found.</string>
+    <string name="mgs_cancelled">Looks empty, on cancelled trips found.</string>
+    <string name="msg_bus">All your booking have been downloaded from BusBook</string>
+    <string name="Cancelled_Trip">Cancelled\nTrip</string>
+    <string name="Competed_Trip">Competed\nTrip</string>
+    <string name="Upcoming_Trip">Upcoming\nTrip</string>
+    <string name="bus_hire_mge">Rent vehicles with a driver \nfrom the best operators</string>
+    <string name="but_mgs">HIRE A VEHICLE</string>
+    <string name="passengers_mgs">Hey! looks like you want to hire more than 1 vehicle, dou\'t worry. You can book multiple vehicle form the various quotes we will share</string>
+    <string name="chat">Chat</string>
+    <string name="my_rides">My Rides</string>
+    <string name="confi_vehicle">Configure Your Vehicle</string>
+    <string name="rupee">₹</string>
+    <string name="seat">Seat :</string>
+    <string name="boarding">BOARDING\n Add Location</string>
+    <string name="dropping">DROPPING\nAdd location</string>
+    <string name="exit_msg">Ticket booking is faster when you are logged in. Are you sure you want to logout.</string>
+    <!--    String src = "<a> Secure your trip just at <font color='theme_color'> ₹ 15</font>.0 per \npassenger</a>";-->
+</resources>

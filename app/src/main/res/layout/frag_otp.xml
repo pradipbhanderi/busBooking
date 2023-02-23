@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EEEEEE"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/lin_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white" />
+
+        </LinearLayout>
+
+        <com.example.busbooking.helper.CustomTextviewBold
+            style="@style/white_14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Verification" />
+
+    </LinearLayout>
+
+    <com.example.busbooking.helper.CustomTextViewSemiBold
+        android:id="@+id/txtMgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Otp Verification"
+        android:gravity="center_horizontal"
+        style="@style/black_12"
+        android:layout_below="@id/lin_bar"/>
+
+    <com.example.busbooking.helper.CustomTextViewSemiBold
+        android:id="@+id/txtotpmgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Relax. We Will automatically validate OTP."
+        android:alpha="0.7"
+        android:gravity="center_horizontal"
+        style="@style/black_12"
+        android:layout_below="@id/txtMgs"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:elevation="@dimen/_2sdp"
+        android:visibility="visible"
+        android:layout_below="@+id/txtotpmgs"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/otp_shape"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:gravity="center"
+                    style="@style/black_12"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/otp_shape"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    style="@style/black_12"
+                    android:singleLine="true"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/otp_shape"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    style="@style/black_12"
+                    android:singleLine="true"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/otp_shape"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    style="@style/black_12"
+                    android:singleLine="true"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/otp_shape"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    style="@style/black_12"
+                    android:singleLine="true"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/otp_shape"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    style="@style/black_12"
+                    android:singleLine="true"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/btn_search"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/_8sdp">
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                style="@style/white_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Confirm" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

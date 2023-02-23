@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/lin_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/img_back_seat_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                android:id="@+id/txtDateTime"
+                style="@style/white_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Date" />
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                android:id="@+id/txt_travels_name"
+                style="@style/white_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Jay Dwarkadhish Travels" />
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                style="@style/white_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="NoN A/C Sleeper (2+1)" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_50sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/_60sdp"
+                android:background="@drawable/seat_bus_booking_lower_upper"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:id="@+id/lin_lowre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.example.busbooking.helper.CustomTextViewSemiBold
+                        android:id="@+id/txt_lower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lower"
+                        style="@style/black_12"/>
+
+                    <com.example.busbooking.helper.CustomTextViewSemiBold
+                        android:id="@+id/txt_lower_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(12)"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        style="@style/black_12"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_upper"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.example.busbooking.helper.CustomTextViewSemiBold
+                        android:id="@+id/txt_upper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upper"
+                        style="@style/black_12"/>
+
+                    <com.example.busbooking.helper.CustomTextViewSemiBold
+                        android:id="@+id/txt_upper_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(12)"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        style="@style/black_12"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_lower_seats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_60sdp"
+                android:background="@drawable/seat_booking"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:tint="@color/gray_1"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_steering_wheel"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcy_bus_seat"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcy_bus_seat_book_two_row"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_Upper_seats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_60sdp"
+                android:background="@drawable/seat_booking"
+                android:visibility="visible"
+                android:paddingBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcy_bus_seat_upper"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcy_bus_seat_book_two_row_upper"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/lin_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:elevation="@dimen/_2sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7">
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                android:id="@+id/txt_sate_book_count"
+                style="@style/gray_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:text="4" />
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                style="@style/gray_14"
+                android:id="@+id/txt_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/theme_color"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="₹ 400.00" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_done"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/theme_color"
+            android:layout_weight="0.3">
+
+            <com.example.busbooking.helper.CustomTextviewBold
+                style="@style/white_14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="DONE" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
